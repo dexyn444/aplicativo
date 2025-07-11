@@ -222,7 +222,7 @@ body {
 
   .container {
     max-width: 100%;
-    padding: 15px;
+    padding: 16px;
     box-shadow: none;
     border-radius: 0;
   }
@@ -230,7 +230,7 @@ body {
   #btnSugestoes,
   .btn-limpar,
   .form-adicionar button {
-    font-size: 13px;
+    font-size: 16px;
     padding: 8px 14px;
     min-width: auto;
     width: 100%;
@@ -256,7 +256,7 @@ body {
   }
 
   ul li {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
