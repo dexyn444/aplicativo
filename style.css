@@ -1,0 +1,262 @@
+/* Estilos Gerais */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000000;
+  margin: 0;
+  padding: 0;
+
+  /* Flexbox para centralizar conteúdo vertical e horizontalmente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh; /* Altura total da viewport para centralização vertical */
+}
+
+.container {
+  background: rgb(255, 255, 255);
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Botão Sugestões */
+
+#btnSugestoes {
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 6px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  width: auto;
+  font-size: 14px;
+  min-width: 100px;
+
+  display: block;
+  margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+#btnSugestoes:hover {
+  background-color: #000000;
+}
+
+/* Área de Sugestões */
+
+.sugestoes {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.sugestoes button {
+  background-color: #e0e0e0;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.sugestoes button:hover {
+  background-color: #58a6ff;
+}
+
+/* Formulário para adicionar produtos */
+
+.form-adicionar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.form-adicionar button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.form-adicionar button:hover {
+  background-color: #218838;
+}
+
+/* Títulos */
+
+h3 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+
+/* Classe para ocultar elementos */
+
+.oculto {
+  display: none;
+}
+
+/* Botão Limpar Lista */
+
+.btn-limpar {
+  background-color: #000000;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  margin: 10px auto 0 auto;
+  min-width: 100px;
+
+  display: block;
+  width: auto;
+}
+
+.btn-limpar:hover {
+  background-color: #000000;
+}
+.riscado {
+  text-decoration: line-through;
+  color: #888;
+}
+
+
+
+
+/* Centraliza o botão */
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilo + Animação do botão */
+.botao-animado {
+  background: linear-gradient(45deg, #28a745, #1e90ff);
+  color: white;
+  padding: 18px 40px;
+  border: none;
+  border-radius: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  animation: pulseGlow 2s infinite ease-in-out;
+  box-shadow: 0 0 20px rgba(40, 167, 69, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efeito ao passar o mouse */
+.botao-animado:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(30, 144, 255, 0.7);
+}
+
+/* Animação: brilho e leve aumento de escala */
+@keyframes pulseGlow {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 15px rgba(40, 167, 69, 0.4);
+    background-position: 0% 50%;
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(30, 144, 255, 0.6);
+    background-position: 100% 50%;
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 15px rgba(40, 167, 69, 0.4);
+    background-position: 0% 50%;
+  }
+}
+
+
+
+
+/* Animação: pula e muda de cor */
+@keyframes pularECor {
+  0% {
+    transform: translateY(0);
+    background-color: #28a745;
+  }
+  25% {
+    transform: translateY(-8px);
+    background-color: #ff6f00;
+  }
+  50% {
+    transform: translateY(0);
+    background-color: #007bff;
+  }
+  75% {
+    transform: translateY(-8px);
+    background-color: #e91e63;
+  }
+  100% {
+    transform: translateY(0);
+    background-color: #28a745;
+  }
+}
+
+
+/* Responsividade para telas pequenas (celulares) */
+@media (max-width: 480px) {
+  
+  body {
+    padding: 15px;
+  }
+
+  .container {
+    max-width: 100%;
+    padding: 15px;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  #btnSugestoes,
+  .btn-limpar,
+  .form-adicionar button {
+    font-size: 13px;
+    padding: 8px 14px;
+    min-width: auto;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 10px 0;
+    display: block;
+  }
+
+  .form-adicionar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  input[type="text"] {
+    width: 100%;
+  }
+
+  /* 🔴 Removido: .sugestoes { flex-direction: column; } */
+
+  .sugestoes button {
+    width: auto; /* deixa os botões com largura natural */
+    flex-shrink: 0; /* impede que eles encolham demais */
+  }
+
+  ul li {
+    font-size: 14px;
+  }
+}
+

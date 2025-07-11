@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lista de Compras</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+     <!-- Botão Sugestões -->
+    <div class="sugestoes-area">
+      <button id="btnSugestoes">Sugestões ⬇️</button>
+      <div id="listaSugestoes" class="sugestoes oculto">
+        <button onclick="adicionarProduto('Arroz')">Arroz</button>
+        <button onclick="adicionarProduto('Feijão')">Feijão</button>
+        <button onclick="adicionarProduto('Leite')">Leite</button>
+        <button onclick="adicionarProduto('Refrigerante')">Refrigerante</button>
+        <button onclick="adicionarProduto('Pão')">Pão</button>
+        <button onclick="adicionarProduto('Ovos')">Ovos</button>
+        <button onclick="adicionarProduto('Café')">Café</button>
+      </div>
+    </div>
+    
+    <!-- Lista de compras -->
+    <h3>🛒 Lista de Compras</h3>
+    <ul id="listaFinal"></ul>
+
+    <!-- Campo para adicionar -->
+    <div class="form-adicionar">
+      <input type="text" id="inputProduto" placeholder="Digite um produto..." />
+      <button onclick="adicionarProdutoManual()">Adicionar</button>
+    </div>
+
+    <!-- Botão limpar toda lista -->
+    <button id="btnLimpar" class="btn-limpar" onclick="limparLista()">Limpar Lista 🗑️</button>
+    
+
+  </div>
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
